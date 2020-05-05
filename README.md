@@ -44,9 +44,17 @@ The example is shown in the following figure.
 ![Posterior distance distribution for PSR J0218+4232 together with prior and measurement](https://github.com/ignotur/pulsar_distances/blob/master/illustration.png)
 
 
-### Troubleshooting 
+### File content
 
-If code is compiled using the linux machine, a line in the makefile should be replaced with:
+File `cnd_varpi.cpp` contains the description of the conditional probability g( varpi | D ).
+
+File `int_real_d.cpp` contains the Galactic distance prior f_D (D).
+
+File `P_D (D | varpi)` combines prior and conditional probability and computes posterior for any distance restricted by 100 kpc (prior is normalised only up until this distance).
+
+## Troubleshooting 
+
+If code is compiled using a linux machine, a line in the makefile should be replaced with:
 
 ```
 g++ -fPIC -shared -O3 cnd_varpi.cpp int_real_d.cpp posterior.cpp -o d_post.so 
