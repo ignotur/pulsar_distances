@@ -36,7 +36,7 @@ Code produces the following figure.
 
 ![Posterior distance distribution for PSR J0218+4232](https://github.com/ignotur/pulsar_distances/blob/master/posterior.png)
 
-### Contribution of measurements and prior
+### Contribution of measurement and prior
 
 The code plot_illustration.py shows individual contribution of the measurement and the prior. For example, in the case of the pulsar J0218+4232, the measurement formally allows the infinite distance. On the other hand, the prior assumes that the pulsar belongs to the Galactic disk population, so large distances are exponentially suppressed.
 The example is shown in the following figure.
@@ -44,6 +44,12 @@ The example is shown in the following figure.
 ![Posterior distance distribution for PSR J0218+4232 together with prior and measurement](https://github.com/ignotur/pulsar_distances/blob/master/illustration.png)
 
 
+### Troubleshooting 
 
+If code is compiled using the linux machine, a line in the makefile should be replaced with:
+
+```
+g++ -fPIC -shared -O3 cnd_varpi.cpp int_real_d.cpp posterior.cpp -o d_post.so 
+```
 
 
