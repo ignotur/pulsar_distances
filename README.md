@@ -50,7 +50,7 @@ File `cnd_varpi.cpp` contains the description of the conditional probability g( 
 
 File `int_real_d.cpp` contains the Galactic distance prior f_D (D).
 
-File `P_D (D | varpi)` combines prior and conditional probability and computes posterior for any distance restricted by 100 kpc (prior is normalised only up until this distance).
+File `posterior.cpp` combines prior and conditional probability and computes posterior for any distance restricted by 100 kpc (prior is normalised only up until this distance).
 
 ## Troubleshooting 
 
