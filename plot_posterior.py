@@ -56,6 +56,7 @@ print ('95% C.I. ranges from ', round(cil, 2), ' to ', round(cir, 2), ' kpc')
 plt.plot (d, post_d / np.max(post_d))
 plt.xlabel ('D (kpc)')
 plt.ylabel ('Relative probability')
+plt.savefig('posterior.png')
 plt.show()
 
 
