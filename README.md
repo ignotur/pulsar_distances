@@ -23,12 +23,16 @@ parameters of PSR J0218+4232.
 The example can be found in plot_posterior.py. This script contains following lines with pulsar parameters:
 
 ```
+###########################################
 ## Example for PSR J0218+4232
+## Enter here measurements for radio pulsar
 
-gl = 139.51
+gl = 139.51         ## Galactic longitude and latitude
 gb = -17.53
-varpi     = 0.16    ## mas
-varpi_err = 0.09
+varpi     = 0.16    ## parallax [mas]
+varpi_err = 0.09    ## parallax error [mas]
+
+###########################################
 ```
 
 Here gl and gb are the Galactic longuitude and latitude (requred by prior), varpi and varpi_err are the measured parallax and parallax error. 
